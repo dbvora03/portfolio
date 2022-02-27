@@ -18,8 +18,8 @@ const Projects = () => {
 
   const projects = () => listOfProjects.map((project) => {
     return (    
-      <div>
-        <p> <strong>{project.name}</strong> - {project.description}</p>
+      <div key={project.name}>
+        <p><strong>{project.name}</strong> - {project.description}</p>
       </div>
       )
 
