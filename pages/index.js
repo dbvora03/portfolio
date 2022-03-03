@@ -26,7 +26,7 @@ export default function Home() {
         <meta name='description' content='Hello!'></meta>
       </Head>
       <h1>Hi there, I am Dhruv 👋 </h1>
-      <p>I am a software developer who is interning @ <strong>KPMG Canada</strong>, where I am working on a DApp project and data science.</p>
+      <p>I am a software developer who is interning @ <strong>KPMG Canada</strong>, where I am working on projects involving DApps and data analytics.</p>
       <p>I enjoy reading about distributed systems and designing decentralized applications.</p>
       <p>I also like Spongebob</p>
       <hr></hr>
