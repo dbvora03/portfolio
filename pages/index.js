@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <Layout >
       <Head>
-        <title>DJ Events</title>
-        <meta name='description' content='Welcome to DJ Events'></meta>
+        <title>Dhruv Vora</title>
+        <meta name='description' content='Hello!'></meta>
       </Head>
       <h1>Hi there, I am Dhruv 👋 </h1>
       <p>I am a software developer who is interning @ <strong>KPMG Canada</strong>, where I am working on a DApp project and data science.</p>

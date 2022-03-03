@@ -7,10 +7,6 @@ const listOfProjects = [
     technologies: [],
     link: "https://github.com/dbvora03/sea-shell"
   }
-
-
-
-
 ]
 
 
@@ -22,7 +18,6 @@ const Projects = () => {
         <p><strong>{project.name}</strong> - {project.description}</p>
       </div>
       )
-
   })
 
 
