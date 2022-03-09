@@ -1,6 +1,6 @@
 import React from 'react'
 import mainStyles from '../styles/Main.module.css'
-import {listOfProjects} from '../../data'
+import {listOfProjects} from './data'
 
 const Projects = () => {
 

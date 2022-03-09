@@ -1,6 +1,6 @@
 import React from 'react'
 import mainStyles from '../styles/Main.module.css'
-import { listOfHackathons } from '../../data'
+import { listOfHackathons } from './data'
 
 const Hackathons = () => {
 

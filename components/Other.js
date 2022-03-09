@@ -1,6 +1,6 @@
 import React from 'react'
 import mainStyles from '../styles/Main.module.css'
-import { listOfOther } from '../../data'
+import { listOfOther } from './data'
 
 const Other = () => {
 
