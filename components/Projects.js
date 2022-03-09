@@ -1,21 +1,13 @@
 import React from 'react'
-
-const listOfProjects = [
-  {
-    name: "Seashell",
-    description: "This is a sample description",
-    technologies: [],
-    link: "https://github.com/dbvora03/sea-shell"
-  }
-]
-
+import mainStyles from '../styles/Main.module.css'
+import {listOfProjects} from '../../data'
 
 const Projects = () => {
 
   const projects = () => listOfProjects.map((project) => {
     return (    
-      <div key={project.name}>
-        <p><strong>{project.name}</strong> - {project.description}</p>
+      <div key={project.name} className={mainStyles.list_text}>
+        <p><strong className={mainStyles.strong} ><a href={project.link} >{project.name}</a></strong> - {project.description}</p>
       </div>
       )
   })
