@@ -57,7 +57,7 @@ export const listOfHackathons = [
 export const listOfOther = [
   {
     name: "Freeform",
-    description: "A site that helps survivors build wealth and financial security needed to themselves",
+    description: "A resource that helps survivors build financial security needed to support themselves",
     technologies: [],
     link: "https://github.com/dbvora03/Iris"
   },
