@@ -10,7 +10,7 @@ export default function Header() {
         <ul>
           <li>
             <Link href='/Dhruv_Vora_Resume.pdf'>
-              <a href='/Dhruv_Vora_Resume.pdf' >Resume</a>
+              <a href='/' >Resume</a>
             </Link>
             
             <a href='mailto:dbvora03@gmail.com' >Email</a>

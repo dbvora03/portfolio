@@ -8,7 +8,7 @@ import Other from '@/components/Other'
 
 export default function Home() {
 
-  const [optionSelect, setOptionSelect] = useState("")
+  const [optionSelect, setOptionSelect] = useState("projects")
 
   const resultsRender = () => {
     if (optionSelect === "projects") {
@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
       <p className={styles.paragraph} >I{"'"}m a second year student at the University of Waterloo studying Computer Engineering. Currently, I'm building <strong className={styles.strong} >Web3Preferences</strong> and <strong className={styles.strong} >Seashell</strong>.</p>
-      <p>I{"'"}m also interning as a software engineer at <strong className={styles.strong} >KPMG Canada</strong>, where I{"'"}m desigining NFT Minting DApps and Pay Equity calculation tools.</p>
+      <p> Currently, I{"'"}m a technical project manager for the Pay Equity project at <strong className={styles.strong} >KPMG Canada</strong>. I initially started my journey here last winter as an intern, where I started working on this project and other projects in the Web3 space.</p>
       <p>On my free time, I love collecting records (hmu if you do too).</p>
       <hr></hr>
       <div className={styles.header}>

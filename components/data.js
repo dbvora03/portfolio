@@ -13,7 +13,7 @@ export const listOfProjects = [
   },
   {
     name: "MLDOOM",
-    description: "A lyric generator that mimics your favourite rapper's favourite rapper using GPT-3",
+    description: "A lyric generator that mimics your favourite rapper's favourite rapper using GPT-2",
     technologies: [],
     link: "https://github.com/dbvora03/MLDOOM"
   },
@@ -25,17 +25,16 @@ export const listOfProjects = [
   },
   {
     name: "Roycheese bot",
-    description: "A personal discord bot built for @roycheese (shout out to roycheese)",
+    description: "A personal discord bot built for roycheese",
     technologies: [],
     link: "https://github.com/dbvora03/roycheese-bot-2.0"
   },
   {
     name: "Photo Portfolio",
-    description: "My (old) personal portfolio built on the Django framework",
+    description: "My (old) personal photography portfolio built on the Django framework",
     technologies: [],
     link: "https://github.com/dbvora03/pixport"
   }
-
 ]
 
 export const listOfHackathons = [
@@ -51,7 +50,6 @@ export const listOfHackathons = [
     technologies: [],
     link: "https://github.com/dbvora03/Iris"
   }
-
 ]
 
 export const listOfOther = [
@@ -59,12 +57,10 @@ export const listOfOther = [
     name: "Freeform",
     description: "A resource that helps survivors build financial security needed to support themselves",
     technologies: [],
-    link: "https://github.com/dbvora03/Iris"
   },
   {
     name: "God Game",
-    description: "An NFT project launched on the METIS Blockchain",
+    description: "Designed the frontend for an NFT project launched on the METIS Blockchain",
     technologies: [],
-    link: "https://github.com/dbvora03/Iris"
   }
 ]
