@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href='/Dhruv_Vora_Resume.pdf'>
+            <Link href='/'>
               <a href='/' >Resume</a>
             </Link>
             
