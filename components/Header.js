@@ -9,8 +9,8 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href='/'>
-              <a href='/' >Resume</a>
+            <Link href='/Dhruv_Vora_Resume.pdf'>
+              <a href='/Dhruv_Vora_Resume.pdf' >Resume</a>
             </Link>
             
             <a href='mailto:dbvora03@gmail.com' >Email</a>
