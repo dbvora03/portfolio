@@ -21,7 +21,7 @@ export const listOfProjects = [
     name: "FreeFood",
     description: "A platform that lets businesses repurpose unneeded food for the community",
     technologies: [],
-    link: "https://github.com/dbvora03/MLDOOM"
+    link: "https://github.com/dbvora03/freefood"
   },
   {
     name: "Roycheese bot",
