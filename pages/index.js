@@ -29,9 +29,9 @@ export default function Home() {
         <meta name='description' content='Hello!'></meta>
       </Head>
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
-      <p className={styles.paragraph} >I{"'"}m a second year student at the University of Waterloo studying Computer Engineering. Currently, I'm building <strong className={styles.strong} >Web3Preferences</strong> and <strong className={styles.strong} >Seashell</strong>.</p>
-      <p className={styles.paragraph}> Currently, I{"'"}m a software engineering consultant for the Pay Equity project at <strong className={styles.strong} >KPMG Canada</strong>. I initially started my journey here last winter as an intern, where I started working on this project and other projects in the Web3 space.</p>
-      <p className={styles.paragraph}>On my free time, I love collecting records (hmu if you do too).</p>
+      <p className={styles.paragraph} >I{"'"}m a second year student at the University of Waterloo studying Computer Engineering. Currently, I{"'"}m a software engineering consultant for the Pay Equity project at <strong className={styles.strong} >KPMG Canada</strong>.</p>
+      <p className={styles.paragraph}> Outside of school and work, I'm doing contract work with pioneers in the <strong className={styles.strong}>Web3</strong> space. I provide an array of services from smart contract development/autiding to full-stack development. Feel free to reach out if you have any big brain ideas.</p>
+      <p className={styles.paragraph}>Oh btw, if you love collecting records, hmu cuz I do. </p>
       <hr></hr>
       <div className={styles.header}>
         <a className={styles.options_bar} onClick={() => setOptionSelect("projects")} >Projects</a>
