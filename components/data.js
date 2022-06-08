@@ -60,6 +60,11 @@ export const listOfHackathons = [
 
 export const listOfOther = [
   {
+    name: "Rush49",
+    description: "Developed a proof of attendance NFT system for their events",
+    technologies: [],
+  },
+  {
     name: "Freeform",
     description: "A resource that helps survivors build financial security needed to support themselves",
     technologies: [],
