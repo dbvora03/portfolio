@@ -45,6 +45,12 @@ export const listOfHackathons = [
     link: "https://github.com/web3con22-team/Blocknauts-dapp"
   },
   {
+    name: "ETHGlobal",
+    description: "Crypto Trading Social Media Platform at Hack Money 2022",
+    technologies: [],
+    link: "https://github.com/web3con22-team/Blocknauts-dapp"
+  },
+  {
     name: "Iris",
     description: "A data driven marketing recommendation engine built using K-means-Clustering",
     technologies: [],
