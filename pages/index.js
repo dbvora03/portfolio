@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
       <p className={styles.paragraph} >I{"'"}m a second year student at the University of Waterloo studying Computer Engineering. Currently, I{"'"}m a software engineering consultant for the Pay Equity project at <strong className={styles.strong} >KPMG Canada</strong>.</p>
-      <p className={styles.paragraph}> Outside of school and work, I'm doing contract work with pioneers in the <strong className={styles.strong}>Web3</strong> space. I provide an array of services from smart contract development/auditing to full-stack development. Feel free to reach out if you have any big brain ideas.</p>
+      <p className={styles.paragraph}> Outside of school and work, I'm developing software in <strong className={styles.strong}>Web3</strong> space. I provide an array of services from smart contract development/auditing to full-stack development. Feel free to reach out if you have any big brain ideas.</p>
       <p className={styles.paragraph}>Oh btw, if you love collecting records, hmu cuz I do. </p>
       <hr></hr>
       <div className={styles.header}>
