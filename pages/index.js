@@ -32,7 +32,7 @@ export default function Home() {
         <meta name='description' content='Hello!'></meta>
       </Head>
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
-      <p className={styles.paragraph} >I{"'"}m a second year student at the University of Waterloo studying Computer Engineering.</p>
+      <p className={styles.paragraph} >I{"'"}m a third year student at the University of Waterloo studying Computer Engineering.</p>
       
       <p className={styles.paragraph}> What am I up to right now?:</p>
       <ul>
