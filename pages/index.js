@@ -43,7 +43,7 @@ export default function Home() {
           <li className={styles.paragraph}>The <strong className={styles.strong}>NFT</strong> minting platform for our internal recognition system</li>
           <li className={styles.paragraph}>An API to gatekeep our land in the <strong className={styles.strong}>Metaverse</strong></li>
         </ul>
-        <li className={styles.paragraph}>Recently, I{"'"}ve also joined <strong className={styles.strong}>Aria</strong> as a lead dev, where we're making a decentralized record label </li>
+        {/*<li className={styles.paragraph}>Recently, I{"'"}ve also joined <strong className={styles.strong}>Aria</strong> as a lead dev, where we're making a decentralized record label </li>*/}
 
       </ul>
       <p className={styles.paragraph}>If you wanted to talk about collecting records, De-Fi, investing, or anything random, let's connect! </p>

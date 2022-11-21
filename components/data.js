@@ -1,5 +1,12 @@
 export const listOfEverything = [
   {
+    name: "Decentraland API",
+    description: "An API designed to authenticate users using Decentraland for client engagements",
+    technologies: [],
+    link: "",
+    type: "Other"
+  },
+  {
     name: "God Game",
     description: "Designed the frontend for an NFT project launched on the METIS Blockchain",
     technologies: [],
