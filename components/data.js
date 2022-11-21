@@ -1,7 +1,7 @@
 export const listOfEverything = [
   {
     name: "Decentraland API",
-    description: "An API designed to authenticate users using Decentraland for client engagements",
+    description: "Designed to authenticate users using Decentraland for client engagements",
     technologies: [],
     link: "",
     type: "Other"
