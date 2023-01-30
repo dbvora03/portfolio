@@ -9,9 +9,9 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href='/Dhruv_Vora_Resume.pdf'>
+            {/* <Link href='/Dhruv_Vora_Resume.pdf'>
               <a href='/Dhruv_Vora_Resume.pdf' >Resume</a>
-            </Link>
+            </Link> */}
             <a href='mailto:dbvora03@gmail.com' >Email</a>
             <a href='https://linkedin.com/in/d3vora'>Linkedin</a>
             <a href='https://github.com/dbvora03'>GitHub</a>

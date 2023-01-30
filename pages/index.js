@@ -32,16 +32,16 @@ export default function Home() {
         <meta name='description' content='Hello!'></meta>
       </Head>
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
-      <p className={styles.paragraph} >I{"'"}m a third year student at the University of Waterloo studying Computer Engineering.</p>
+      <p className={styles.paragraph} >I{"'"}m a third year student at the University of Waterloo studying Computer Engineering</p>
       
       <p className={styles.paragraph}> What am I up to right now?:</p>
       <ul>
-        <li className={styles.paragraph}>I{"'"}m at <strong className={styles.strong}>Dropbase</strong> as a software engineering intern</li>
+        <li className={styles.paragraph}>I{"'"}m working on <strong className={styles.strong}>Aria Music</strong>, an app that gives artists the funds they deserve</li>
         <li className={styles.paragraph}>I{"'"}m also working at <strong className={styles.strong}>KPMG</strong> as a Software Engineer Consultant, where I{"'"}m developing:</li>
         <ul>
           <li className={styles.paragraph}>The <strong className={styles.strong}>#1 Pay Equity Tool</strong> in the country</li>
           <li className={styles.paragraph}>The <strong className={styles.strong}>NFT</strong> minting platform for our internal recognition system</li>
-          <li className={styles.paragraph}>An API to gatekeep our land in the <strong className={styles.strong}>Metaverse</strong></li>
+          <li className={styles.paragraph}>An authentication API for our land in the <strong className={styles.strong}>Metaverse</strong></li>
         </ul>
         {/*<li className={styles.paragraph}>Recently, I{"'"}ve also joined <strong className={styles.strong}>Aria</strong> as a lead dev, where we're making a decentralized record label </li>*/}
 
