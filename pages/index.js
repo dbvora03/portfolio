@@ -34,18 +34,12 @@ export default function Home() {
       <h1>Hi there, I{"'"}m Dhruv 👋 </h1>
       <p className={styles.paragraph} >I{"'"}m a third year student at the University of Waterloo studying Computer Engineering</p>
       
-      <p className={styles.paragraph}> What am I up to right now?:</p>
+      <p className={styles.paragraph}> What am I up to right now?</p>
       <ul>
-        <li className={styles.paragraph}>I{"'"}m working on <strong className={styles.strong}>Aria Music</strong>, an app that gives artists the funds they deserve</li>
-        <li className={styles.paragraph}>I{"'"}m also working at <strong className={styles.strong}>KPMG</strong> as a Software Engineer Consultant, where I{"'"}m developing:</li>
-        <ul>
-          <li className={styles.paragraph}>The <strong className={styles.strong}>#1 Pay Equity Tool</strong> in the country</li>
-          <li className={styles.paragraph}>The <strong className={styles.strong}>NFT</strong> minting platform for our internal recognition system</li>
-          <li className={styles.paragraph}>An authentication API for our land in the <strong className={styles.strong}>Metaverse</strong></li>
-        </ul>
-        {/*<li className={styles.paragraph}>Recently, I{"'"}ve also joined <strong className={styles.strong}>Aria</strong> as a lead dev, where we're making a decentralized record label </li>*/}
-
+        <li className={styles.paragraph}>During the day, I{"'"}m hustling at school </li>
+        <li className={styles.paragraph}>During my nights and weekends, I{"'"}m doing contract work for <strong className={styles.strong}>Aria Music</strong>, a project that changes the way artists earn the cut they deserve</li>
       </ul>
+      <p className={styles.paragraph}>Previously, I was helping <strong className={styles.strong}>ether.fi</strong> build a non-custodial decentralized staking protocol, helped <strong className={styles.strong}>KPMG</strong> increase their presence in the NFT space, and expanded test automation at <strong className={styles.strong}>Dropbase</strong></p>
       <p className={styles.paragraph}>If you wanted to talk about collecting records, De-Fi, investing, or anything random, let's connect! </p>
       <hr></hr>
       <div className={styles.header}>
