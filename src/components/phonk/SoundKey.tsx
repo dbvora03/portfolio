@@ -18,7 +18,7 @@ const SoundKey = ({keyboard}: Props) => {
     if (isPulsing) {
       const timeoutId = setTimeout(() => {
         setIsPulsing(false);
-      }, 400); // 5000 milliseconds = 5 seconds
+      }, 1); // 5000 milliseconds = 5 seconds
 
       return () => clearTimeout(timeoutId);
     }
