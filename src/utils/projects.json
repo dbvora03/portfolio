@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Favella Friday (In progress)",
+    "description": "A collaborative Brazilian phonk sound board built with some socket magic on a Go server",
+    "link": "/projects/phonk",
+    "type": "personal"
+  },
+  {
+    "title": "Aria Music Website",
+    "description": "Official homepage for Aria Music. Made using Next.js and Chakra UI",
+    "link": "https://www.ariamusic.co/",
+    "type": "other"
+  },
+  {
+    "title": "ether.fi Sync Client",
+    "description": "A Daemon that finds potential full node stakers and adds their validator keys to a Teku client. Built in Go",
+    "link": "https://github.com/GadzeFinance/etherfi-sync-clientv2",
+    "type": "other"
+  },
+  {
+    "title": "ether.fi Desktop App",
+    "description": "A secure application for generating ETH staking keys encrypted using AES-256-GCM. Built on Electron and React",
+    "link": "https://github.com/GadzeFinance/etherfi-desktop"
+  },
+  {
+    "title": "Decentraland Authentication System",
+    "description": "A two factor authentication system built for KPMG's office space in the metaverse. Built with FastAPI on Azure",
+    "type": "contract"
+  },
+  {
+    "title": "God Game",
+    "description": "Frontend for an NFT project launched on the METIS blockchain. Made in React",
+    "link": "https://godgame.xyz",
+    "type": "contract"
+  },
+  {
+    "title": "Seashell",
+    "description": "A CLI tool that stores looooong terminal commands as aliases in the cloud",
+    "link": "https://github.com/dbvora03/sea-shell",
+    "type": "personal"
+  },
+  {
+    "title": "Web3Preferences",
+    "description": "A web3 application that stores user accessibility preferences globally. Built on Polygon using Solidity",
+    "link": "https://github.com/web3con22-team/Blocknauts-dapp",
+    "type": "hackathon"
+  },
+  {
+    "title": "MLDOOM",
+    "description": "A lyric generator that mimics your favourite rapper's favourite rapper using GPT-2",
+    "link": "https://github.com/dbvora03/MLDOOM",
+    "type": "personal"
+  },
+  {
+    "title": "Cache is King",
+    "description": "A lightweight personal caching server built in Golang",
+    "link": "https://github.com/dbvora03/cache-is-king",
+    "type": "project"
+  },
+  {
+    "title": "FreeFood",
+    "description": "A platform that lets businesses repurpose unneeded food for the community. First MERN project",
+    "link": "https://github.com/dbvora03/freefood",
+    "type": "project"
+  },
+  {
+    "title": "Iris",
+    "description": "A data driven marketing recommendation engine built using K-means-Clustering",
+    "link": "https://github.com/dbvora03/Iris",
+    "type": "hackathon"
+  },
+  {
+    "title": "Freeform",
+    "description": "A resource that helps domestic abuse victims build the financial security needed to support themselves",
+    "type": "other"
+  }
+]
