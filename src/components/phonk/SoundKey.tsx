@@ -18,7 +18,7 @@ const SoundKey = ({keyboard}: Props) => {
     if (isPulsing) {
       const timeoutId = setTimeout(() => {
         setIsPulsing(false);
-      }, 1); // 5000 milliseconds = 5 seconds
+      }, 200); // 5000 milliseconds = 5 seconds
 
       return () => clearTimeout(timeoutId);
     }
@@ -26,7 +26,7 @@ const SoundKey = ({keyboard}: Props) => {
   }, [isPulsing]);
 
   const handleButtonClick = useCallback(() => {
-    if (sound && !isPulsing) {
+    if (sound) {
       setIsPulsing(true);
       const audio = new Audio(sound.filePath)
       responseToast({
@@ -47,7 +47,7 @@ const SoundKey = ({keyboard}: Props) => {
         })
       }
     }
-  }, [setIsPulsing, sound, toast, keyboard, isPulsing, responseToast]);
+  }, [setIsPulsing, sound, toast, keyboard, responseToast]);
 
   useEffect(() => {
     const handleKeyDown = (e: any) => {
@@ -70,7 +70,7 @@ const SoundKey = ({keyboard}: Props) => {
           scale: isPulsing ? [1, 1.15, 1] : 1,
         }}
         transition={{
-          duration: 400 / 1000,
+          duration: 200 / 1000,
         }}
       >
     <Box position="relative">
