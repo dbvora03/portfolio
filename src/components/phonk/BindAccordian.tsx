@@ -12,7 +12,7 @@ import BindSoundItem from './BindSoundItem';
 
 const BindAccordian = () => {
 
-  const types = ["Chant", "One Shot"]
+  const types = ["Chant", "One Shot", "Vocals", "Random"]
   return (
     <Accordion allowToggle>
       {types.map((type: string) => (

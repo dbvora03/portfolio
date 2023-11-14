@@ -31,6 +31,26 @@ export const soundMapping: Array<soundType> = [
     type: "Chant"
   },
   {
+    name: "Crow",
+    filePath: "/sounds/chants/crow.wav",
+    type: "Chant"
+  },
+  {
+    name: "FrogPig",
+    filePath: "/sounds/chants/frogpig.wav",
+    type: "Chant"
+  },
+  {
+    name: "Hahaha",
+    filePath: "/sounds/chants/hahaha.wav",
+    type: "Chant"
+  },
+  {
+    name: "Oioioi",
+    filePath: "/sounds/chants/oioioi.wav",
+    type: "Chant"
+  },
+  {
     name: "OneShot1",
     filePath: "/sounds/oneshot/OneShot (2).wav",
     type: "One Shot"
@@ -84,5 +104,55 @@ export const soundMapping: Array<soundType> = [
     name: "OneShot11",
     filePath: "/sounds/oneshot/OneShot (14).wav",
     type: "One Shot"
-  }
+  },
+  {
+    name: "OneShot12",
+    filePath: "/sounds/oneshot/OneShot (15).mp3",
+    type: "One Shot"
+  },
+  {
+    name: "Whistle",
+    filePath: "/sounds/random/whistle.wav",
+    type: "One Shot"
+  },
+  {
+    name: "Bolado",
+    filePath: "/sounds/vocals/whistle.wav",
+    type: "Vocals"
+  },
+  {
+    name: "Brabo",
+    filePath: "/sounds/vocals/brabo.wav",
+    type: "Vocals"
+  },
+  {
+    name: "Brazil",
+    filePath: "/sounds/vocals/brazil.wav",
+    type: "Vocals"
+  },
+  {
+    name: "IDK",
+    filePath: "/sounds/vocals/idk.wav",
+    type: "Vocals"
+  },
+  {
+    name: "Jingigi",
+    filePath: "/sounds/vocals/jingigi.wav",
+    type: "Vocals"
+  },
+  {
+    name: "Long",
+    filePath: "/sounds/vocals/long.mp3",
+    type: "Vocals"
+  },
+  {
+    name: "Moans",
+    filePath: "/sounds/vocals/moans.wav",
+    type: "Vocals"
+  },
+  {
+    name: "Whistle",
+    filePath: "/sounds/random/whistle.wav",
+    type: "Random"
+  },
 ]
