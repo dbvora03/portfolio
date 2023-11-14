@@ -1,7 +1,6 @@
 import { soundType } from '@/utils/soundMapping'
 import { Flex, Select, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import useSound from 'use-sound'
 import { BsPlayCircle } from "react-icons/bs"
 import { keys } from '@/utils/keys'
 import { useDispatch } from 'react-redux'
@@ -14,13 +13,14 @@ interface Props {
 
 const BindSoundItem = ({sound}: Props) => {
 
-  const [playSound] = useSound(sound.filePath, {interrupt: true})
   const [isExpanded, setIsExpanded] = useState(false);
 
   const dispatch = useDispatch()
 
   const handleButtonClick = () => {
-    playSound()
+
+    const audio = new Audio(sound.filePath)
+    audio.play()
     setIsExpanded(!isExpanded);
   };
 
