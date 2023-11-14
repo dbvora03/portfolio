@@ -117,7 +117,7 @@ export const soundMapping: Array<soundType> = [
   },
   {
     name: "Bolado",
-    filePath: "/sounds/vocals/whistle.wav",
+    filePath: "/sounds/vocals/bolado.wav",
     type: "Vocals"
   },
   {
