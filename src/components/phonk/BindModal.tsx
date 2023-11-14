@@ -18,7 +18,6 @@ interface Props {
 const BindModal = ({ disclosure }: Props) => {
   return (
     <>
-      <Button onClick={disclosure.onOpen}>Open Modal</Button>
       <Modal
         isOpen={disclosure.isOpen}
         onClose={disclosure.onClose}
