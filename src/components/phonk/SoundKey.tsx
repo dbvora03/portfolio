@@ -4,21 +4,40 @@ import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 
 interface Props {
-  keyboard: string
+  keyboard: string,
+  onOpen: () => void,
 }
 
-const SoundKey = ({keyboard}: Props) => {
+const SoundKey = ({keyboard, onOpen}: Props) => {
   const [isPulsing, setIsPulsing] = useState(false);
+  // const [loop, setLoop] = useState(10)
 
   const sound = useSelector((state: any) => state.keybind.keys[keyboard])
   const toast = useToast()
   const responseToast = useToast()
 
+  // useEffect(() => {
+
+  //   let intervalId: any = null;
+  //   if (loop) {
+  //     intervalId = setInterval(() => {
+  //       sound?.audio.play()
+  //       console.log('Running...');
+  //     }, 1000);
+  //   } else {
+  //     clearInterval(intervalId);
+  //   }
+
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, [loop, setLoop]);
+
   useEffect(() => {
     if (isPulsing) {
       const timeoutId = setTimeout(() => {
         setIsPulsing(false);
-      }, 200); // 5000 milliseconds = 5 seconds
+      }, 200);
 
       return () => clearTimeout(timeoutId);
     }
@@ -28,7 +47,7 @@ const SoundKey = ({keyboard}: Props) => {
   const handleButtonClick = useCallback(() => {
     if (sound) {
       setIsPulsing(true);
-      const audio = new Audio(sound.filePath)
+      sound?.audio?.play()
       responseToast({
         position: 'bottom-left',
         render: () => (
@@ -37,7 +56,7 @@ const SoundKey = ({keyboard}: Props) => {
           </Box>
         )
       })
-      audio.play()
+
     } else if (!sound){
       if (!toast.isActive(keyboard)) {
         toast({
@@ -45,9 +64,10 @@ const SoundKey = ({keyboard}: Props) => {
           title: "Bind this key to a sound",
           duration: 2000
         })
+        onOpen()
       }
     }
-  }, [setIsPulsing, sound, toast, keyboard, responseToast]);
+  }, [setIsPulsing, sound, toast, keyboard, responseToast, onOpen]);
 
   useEffect(() => {
     const handleKeyDown = (e: any) => {

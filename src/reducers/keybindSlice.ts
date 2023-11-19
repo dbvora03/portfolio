@@ -15,7 +15,10 @@ export const keybindSlice = createSlice({
       const currentLetter = (Object.keys(state.keys).find(key => state.keys[key]?.filePath === action.payload.value.filePath));
 
       if (currentLetter) state.keys[currentLetter] = null
-      state.keys[action.payload.letter] = action.payload.value
+
+      let audio = new Audio(action.payload.value.filePath);
+      audio.load()
+      state.keys[action.payload.letter] = {...action.payload.value, audio: audio}
     }
   }
 })

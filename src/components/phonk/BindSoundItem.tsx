@@ -8,17 +8,18 @@ import { setKey } from '@/reducers/keybindSlice'
 
 
 interface Props {
-  sound: soundType
+  sound: soundType,
+  initialKey: string
 }
 
-const BindSoundItem = ({sound}: Props) => {
-
-  const [isExpanded, setIsExpanded] = useState(false);
+const BindSoundItem = ({sound, initialKey}: Props) => {
 
   const dispatch = useDispatch()
 
-  const handleButtonClick = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [currentKey, setCurrentKey] = useState(initialKey)
 
+  const handleButtonClick = () => {
     const audio = new Audio(sound.filePath)
     audio.play()
     setIsExpanded(!isExpanded);
@@ -26,6 +27,7 @@ const BindSoundItem = ({sound}: Props) => {
 
   const handleSelectChange = (event: any) => {
     const selectedLetter = event.target.value;
+    setCurrentKey(selectedLetter)
     dispatch(setKey({letter: selectedLetter, value: sound}));
   };
 
@@ -38,7 +40,7 @@ const BindSoundItem = ({sound}: Props) => {
         <Text>{sound.name}.mp3</Text>
       </Flex>
       <Flex alignItems="center" gap={3}>
-        <Select border="2px solid black" borderRadius={0} onChange={handleSelectChange}>
+        <Select border="2px solid black" borderRadius={0} onChange={handleSelectChange} value={currentKey}>
           <option value={""}>Select</option>
           {keys.map((letter: string) => (
             <option key={letter} value={letter}>

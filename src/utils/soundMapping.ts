@@ -111,11 +111,6 @@ export const soundMapping: Array<soundType> = [
     type: "One Shot"
   },
   {
-    name: "Whistle",
-    filePath: "/sounds/random/whistle.wav",
-    type: "One Shot"
-  },
-  {
     name: "Bolado",
     filePath: "/sounds/vocals/bolado.wav",
     type: "Vocals"
@@ -140,11 +135,11 @@ export const soundMapping: Array<soundType> = [
     filePath: "/sounds/vocals/jingigi.wav",
     type: "Vocals"
   },
-  {
-    name: "Long",
-    filePath: "/sounds/vocals/long.mp3",
-    type: "Vocals"
-  },
+  // {
+  //   name: "Long",
+  //   filePath: "/sounds/vocals/long.mp3",
+  //   type: "Vocals"
+  // },
   {
     name: "Moans",
     filePath: "/sounds/vocals/moans.wav",

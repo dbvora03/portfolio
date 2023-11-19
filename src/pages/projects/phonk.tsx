@@ -1,7 +1,7 @@
 import BindModal from '@/components/phonk/BindModal'
 import Keyboard from '@/components/phonk/Keyboard'
 import { store } from '@/reducers/store'
-import { Flex, Text, Button, useDisclosure, Image, useToast } from '@chakra-ui/react'
+import { Flex, Text, Button, useDisclosure, Image } from '@chakra-ui/react'
 import React from 'react'
 import { Provider } from 'react-redux';
 
@@ -30,9 +30,9 @@ const Phonk = () => {
         </Flex>
       </Flex>
       <Flex flexDirection={"column"} justifyContent="center" mt={20} alignItems="center" h="100%" gap={5}>
-        <Image src="/images/arana.gif" w={250}/>
+        <Image src="/images/arana.gif" w={250} alt="DJ Arana"/>
         <Flex flexDirection={"column"} w="50%" gap={4}>
-          <Keyboard/>
+          <Keyboard onOpen={disclosure.onOpen}/>
         </Flex>
       </Flex>
       <BindModal disclosure={disclosure}/>
