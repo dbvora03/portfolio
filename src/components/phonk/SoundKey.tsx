@@ -61,7 +61,7 @@ const SoundKey = ({keyboard, onOpen}: Props) => {
   const handleButtonClick = useCallback(() => {
     if (sound) {
       setIsPulsing(true);
-      sound?.audio?.play()
+      sound?.audio?.cloneNode().play()
       responseToast({
         position: 'bottom-left',
         render: () => (
