@@ -1,7 +1,7 @@
 import BindModal from '@/components/phonk/BindModal'
 import Keyboard from '@/components/phonk/Keyboard'
 import { store } from '@/reducers/store'
-import { Flex, Text, Button, useDisclosure, Image } from '@chakra-ui/react'
+import { Flex, Text, Button, useDisclosure, Image, Tooltip, Box } from '@chakra-ui/react'
 import React from 'react'
 import { Provider } from 'react-redux';
 

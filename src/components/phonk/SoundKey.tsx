@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Flex, Box, useToast } from '@chakra-ui/react';
+import { Flex, Box, useToast, Menu, MenuList, MenuItem, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Text, Tooltip,   Modal,
+  ModalOverlay,
+  ModalContent, 
+  useDisclosure} from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 
@@ -10,28 +13,39 @@ interface Props {
 
 const SoundKey = ({keyboard, onOpen}: Props) => {
   const [isPulsing, setIsPulsing] = useState(false);
-  // const [loop, setLoop] = useState(10)
+  const [loop, setLoop] = useState(0)
+  const [sliderValue, setSliderValue] = useState(5)
+  const [showTooltip, setShowTooltip] = useState(false)
+  const { isOpen, onOpen: onModalOpen, onClose } = useDisclosure()
 
   const sound = useSelector((state: any) => state.keybind.keys[keyboard])
   const toast = useToast()
   const responseToast = useToast()
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   let intervalId: any = null;
-  //   if (loop) {
-  //     intervalId = setInterval(() => {
-  //       sound?.audio.play()
-  //       console.log('Running...');
-  //     }, 1000);
-  //   } else {
-  //     clearInterval(intervalId);
-  //   }
+    let intervalId: any = null;
+    if (loop) {
+      intervalId = setInterval(() => {
+        sound?.audio.play()
+        setIsPulsing(true);
+        responseToast({
+          position: 'bottom-left',
+          render: () => (
+            <Box color="black" p={2} border="1px solid black">
+              {sound.name}.mp3
+            </Box>
+          )
+        })
+      }, loop * 1000);
+    } else {
+      clearInterval(intervalId);
+    }
 
-  //   return () => {
-  //     clearInterval(intervalId);
-  //   };
-  // }, [loop, setLoop]);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [loop, responseToast, setLoop, sound]);
 
   useEffect(() => {
     if (isPulsing) {
@@ -84,7 +98,15 @@ const SoundKey = ({keyboard, onOpen}: Props) => {
   }, [handleButtonClick, keyboard]);
 
   return (
-    <Box w={20} h={20}>
+    <Box w={20} h={20}
+      onContextMenu={(e) => {
+        e.preventDefault();
+
+        if (sound) {
+          onModalOpen();
+        }
+      }}
+    >
       <motion.div
         animate={{
           scale: isPulsing ? [1, 1.15, 1] : 1,
@@ -93,33 +115,62 @@ const SoundKey = ({keyboard, onOpen}: Props) => {
           duration: 200 / 1000,
         }}
       >
-    <Box position="relative">
-      <Flex
-        border="2px solid black"
-        w={20}
-        h={20}
-        alignItems="center"
-        justifyContent="center"
-        color="black"
-        _hover={{ bg: 'black', color: 'white' }}
-        onClick={handleButtonClick}
-        transition="ease-in-out 0.2s"
-      >
-        {keyboard}
-      </Flex>
-      {sound && (
-        <Box
-          color="gray.600"
-          top={0.5}
-          left={0}
-          position="absolute"
-          fontSize={10}
-          pl={1}
+        <Box position="relative"
         >
-          {sound.name}.mp3
+          <Flex
+            border="2px solid black"
+            w={20}
+            h={20}
+            alignItems="center"
+            justifyContent="center"
+            color="black"
+            _hover={{ bg: 'black', color: 'white' }}
+            onClick={handleButtonClick}
+            transition="ease-in-out 0.2s"
+          >
+            {keyboard}
+          </Flex>
+          {sound && (
+            <Box
+              color="gray.600"
+              top={0.5}
+              left={0}
+              position="absolute"
+              fontSize={10}
+              pl={1}
+            >
+              {sound.name}.mp3
+            </Box>
+          )}
         </Box>
-      )}
-    </Box>
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay/>
+          <ModalContent bg="#fbfbf3" p={5} display={"flex"} gap={5}>
+            <Text color="black">Loop</Text>
+            <Slider
+              defaultValue={0}
+              max={10}
+              step={0.1}
+              onChange={(v) => setLoop(v)}
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
+              <SliderTrack bg="gray.300">
+                <SliderFilledTrack bg="black" />
+              </SliderTrack>
+              <Tooltip
+                hasArrow
+                bg='black'
+                color='white'
+                placement='top'
+                isOpen={showTooltip}
+                label={loop ? `${loop}s` : "No Loop"}
+              >
+                <SliderThumb bg="black" />
+              </Tooltip>
+            </Slider>
+          </ModalContent>
+        </Modal>
       </motion.div>
     </Box>
   );
