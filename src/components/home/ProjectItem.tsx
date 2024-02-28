@@ -4,7 +4,6 @@ import { GoLinkExternal } from "react-icons/go"
 
 const ProjectItem = ({description, title, link}: {description: string, title: string, link?: string}) => {
   
-  console.log(link)
   return (
     <Flex flexDirection="column" gap={2}>
       <Flex alignItems={"center"} gap={2}>

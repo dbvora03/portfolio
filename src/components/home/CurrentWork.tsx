@@ -1,7 +1,7 @@
-import React from 'react'
-import { Text, Flex, Box } from '@chakra-ui/react'
-import { BsArrowReturnRight } from 'react-icons/bs'
-import Strong from './Strong'
+import React from "react";
+import { Text, Flex, Box } from "@chakra-ui/react";
+import { BsArrowReturnRight } from "react-icons/bs";
+import Strong from "./Strong";
 
 const CurrentWork = () => {
   return (
@@ -11,9 +11,10 @@ const CurrentWork = () => {
           What am I up to during the day?
         </Text>
         <Flex alignItems={"center"} pl={3} gap={2}>
-          <BsArrowReturnRight color="black"/>
+          <BsArrowReturnRight color="black" />
           <Text color="black" fontSize={18}>
-            Hustling at school, building <Strong link={"https://www.tensor.trade/"}>Tensor</Strong> soon...
+            Building really cool stuff at
+            <Strong link={"https://www.tensor.trade/"}>Tensor</Strong>
           </Text>
         </Flex>
       </Box>
@@ -22,14 +23,16 @@ const CurrentWork = () => {
           What am I up to at night?
         </Text>
         <Flex alignItems={"center"} pl={3} gap={2}>
-          <BsArrowReturnRight color="black"/>
+          <BsArrowReturnRight color="black" />
           <Text color="black" fontSize={18}>
-            I{"'"}m building <Strong link="https://www.ariamusic.co/">Aria Music</Strong>, helping Artists get their fair share
+            I{"'"}m building{" "}
+            <Strong link="https://www.ariamusic.co/">Aria Music</Strong>, an
+            artist first platform that makes sense
           </Text>
         </Flex>
       </Box>
     </Flex>
-  )
-}
+  );
+};
 
-export default CurrentWork
+export default CurrentWork;

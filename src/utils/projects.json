@@ -1,5 +1,11 @@
 [
   {
+    "title": "Ai is dev",
+    "description": "A self serve AI token platform where you can create your own SPL or ERC-20 token using AI",
+    "link": "https://aiis.dev/",
+    "type": "other"
+  },
+  {
     "title": "Favella Friday (In progress)",
     "description": "A collaborative Brazilian phonk sound board built with some socket magic on a Go server",
     "link": "/projects/phonk",
