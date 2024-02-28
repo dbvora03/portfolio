@@ -13,7 +13,7 @@ const CurrentWork = () => {
         <Flex alignItems={"center"} pl={3} gap={2}>
           <BsArrowReturnRight color="black" />
           <Text color="black" fontSize={18}>
-            Building really cool stuff at
+            Building really cool stuff at{" "}
             <Strong link={"https://www.tensor.trade/"}>Tensor</Strong>
           </Text>
         </Flex>
