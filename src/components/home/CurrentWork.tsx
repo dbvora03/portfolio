@@ -27,7 +27,13 @@ const CurrentWork = () => {
           <Text color="black" fontSize={18}>
             I{"'"}m building{" "}
             <Strong link="https://www.ariamusic.co/">Aria Music</Strong>, an
-            artist first platform that makes sense
+            artist first platform that finally makes sense
+          </Text>
+        </Flex>
+        <Flex alignItems={"center"} pl={3} mt={2} gap={2}>
+          <BsArrowReturnRight color="black" />
+          <Text color="black" fontSize={18}>
+            Some stuff on the side cuz I gotta eat
           </Text>
         </Flex>
       </Box>

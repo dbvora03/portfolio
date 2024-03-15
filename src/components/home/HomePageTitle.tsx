@@ -7,10 +7,10 @@ const HomePageTitle = () => {
     <Flex justifyContent="space-between" alignItems={"start"} gap={40}>
       <Flex flexDirection="column" maxW={"100%"}>
         <Text color="black" fontWeight="600" fontSize={40}>
-          Hi there, I{"'"}m Dhruv 👋
+          hi, i{"'"}m dhruv 👋
         </Text>
         <Text color="black" fontWeight="600" fontSize={20}>
-          I love building product and building product
+          I build stuff
         </Text>
       </Flex>
     </Flex>
