@@ -7,7 +7,7 @@ const Header = () => {
       <Avatar as={Link} href="/" size='md' src="/images/avatae.JPG"/>
       <Flex color="black" gap={3}>
         <Link href="/projects">Projects</Link>
-        <Link href="https://linkedin.com/in/d3vora">Linkedin</Link>
+        {/* <Link href="https://linkedin.com/in/d3vora">Linkedin</Link> */}
         <Link href="https://github.com/dbvora03">Github</Link>
       </Flex>
     </Flex>
