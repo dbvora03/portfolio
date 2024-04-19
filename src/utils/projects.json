@@ -1,7 +1,13 @@
 [
   {
+    "title": "Solana Liquidity Bootstrapping Pool",
+    "description": "A liquidity bootsrapping pool built with anchor programs for Fjord Foundry",
+    "link": "",
+    "type": "contract"
+  },
+  {
     "title": "Dump Inspection Software (Acquired)",
-    "description": "A mobile application that speeds up inspection and analysis of dump truck damage. Acquired by an Oil and Gas giant ",
+    "description": "A mobile application that speeds up inspection and analysis of dump truck damage. Acquired by Suncor ",
     "link": "",
     "type": "contract"
   },
