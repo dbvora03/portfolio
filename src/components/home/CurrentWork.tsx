@@ -38,7 +38,7 @@ const CurrentWork = () => {
         <Flex alignItems={"center"} pl={3} gap={2}>
           <BsArrowReturnRight color="black" />
           <Text color="black" fontSize={16}>
-            Helped build{" "}
+            Helped{" "}
             <Strong link="https://www.ether.fi/">Ether.fi</Strong> build the
             leading restaking platform
           </Text>
